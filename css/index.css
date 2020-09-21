@@ -1,0 +1,26 @@
+nav{
+    background-color:#880E4F;
+}
+nav a{
+    color:white;
+    font-weight: 400;
+    font-size: 18px;
+}
+nav span{
+    color: #FFD600;
+    font-weight: 900;
+    font-size: 32px;
+}
+.jumbotron{
+    background-color:#C2185B;
+    color:white;
+}
+.btn{
+    background-color:#C2185B;
+    color:white;
+}
+.col-lg-7{
+    background-color: #FCE4EC;
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px #ff0266;
+}

@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/index.js">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>yourAKANname</title>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand mx-auto" href="#">yourAKANname</a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><span>AKAN</span></a>
       </nav>
 </header>
 <body>
@@ -22,25 +21,33 @@
     <div class="container">
         <h3 class="text-center">Let's get started <span style='font-size:25px;'>&#128522;</span></h3>
         <div class="col-lg-7 col-md-8 mx-auto m-2">
-            <form class="p-3 mt-5">
+            <form class="p-3 mt-5" name = "myForm">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Enter Your Birth Year</label>
-                  <input type="number" class="form-control" id="year" placeholder="YYYY">
+                  <input type="number" class="form-control" id="year" placeholder="YYYY" maxlength="4" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Enter Your Birth Month</label>
-                  <input type="number" class="form-control" id="month" placeholder="MM">
+                  <input type="number" class="form-control" id="month" placeholder="MM" maxlength="2" min="1" max="12" required>
                 </div>
                 <div class="form-group">
                    <label for="exampleInputPassword1">Enter Your Birth Day</label>
-                   <input type="number" class="form-control" id="day" placeholder="DD">
+                   <input type="number" class="form-control" id="day" placeholder="DD" maxlength="2" min="1" max="31" required>
                 </div>
-                <button type="submit" class="btn btn-lg btn-block btn-primary" onclick = "calculate();">Submit</button>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Gender</label>
+                    <select class="form-control" id="gender">
+                        <option>Female</option>
+                        <option>Male</option>
+                      </select>
+                 </div>
+                <button type="button"  class="btn btn-lg btn-block " onclick = "calculate();">Submit</button>
             </form>
-            <h4 id="result"></h4>
         </div>
+        <h3 id="result" class="p-5 text-center"></h3>
     </div>
 </body>
+<script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

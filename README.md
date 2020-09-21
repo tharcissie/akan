@@ -9,12 +9,12 @@
  ## Installation
  ### Clone
  Clone this repo to your local machine using <br>
- `git clone https://github.com/tharcissie/my_portfolio.git` <br>
+ `https://github.com/tharcissie/akan.git` <br>
  After cloning it open it in your code editor and run it in your browser
  
  ## Link to live site on GitHub Pages
- https://github.com/tharcissie/my_portfolio.git <br>
- https://tharcissie.github.io/my_portfolio/
+ https://github.com/tharcissie/akan.git <br>
+ https://tharcissie.github.io/akan/
  
  ## Licence
  MIT License

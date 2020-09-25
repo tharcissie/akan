@@ -20,7 +20,7 @@
  After cloning it open it in your code editor and run it in your browser
  
  ## Link to live site on GitHub Pages
- https://github.com/tharcissie/akan.git <br>
+
  https://tharcissie.github.io/akan/
  
  ## Licence

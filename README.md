@@ -4,7 +4,14 @@
 ## Description
    This is a simple web application that generate your akan name <br>
    based on your birthday.
+## Technologies used
+   _Javascript
+   _HTML
+   _CSS
+   _Bootstrap
    
+ ## Contact information
+    Email address: tharcissieidufashe@gmail.com
    
  ## Installation
  ### Clone

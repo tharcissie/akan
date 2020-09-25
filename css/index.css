@@ -22,8 +22,13 @@ nav span{
     background-color:#C2185B;
     color:white;
 }
+.btn:hover{
+    background-color:black;
+    color:#C2185B;
+}
 .col-lg-7{
     background-color: #FCE4EC;
     border-radius: 20px;
     box-shadow: 2px 1px 2px #ff0266;
 }
+

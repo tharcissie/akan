@@ -20,9 +20,10 @@
  After cloning it open it in your code editor and run it in your browser
  
  ## Link to live site on GitHub Pages
-
  https://tharcissie.github.io/akan/
- 
+
+ <img src='image/akan.png'> 
+
  ## Licence
  MIT License
 

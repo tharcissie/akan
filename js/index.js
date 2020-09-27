@@ -28,7 +28,7 @@ var downn = document.getElementById('result2');
                 alert( "Please provide a valid day!" );
                 return false;
             }
-             if( year >4 && year < 4 ) {
+             if( year >4 || year < 4 ) {
                 alert( "Please provide a valid year!" );
                 return false;
             }

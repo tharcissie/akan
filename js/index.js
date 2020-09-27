@@ -1,4 +1,5 @@
-var down = document.getElementById('result'); 
+var down = document.getElementById('result1'); 
+var downn = document.getElementById('result2'); 
           
         function calculate() { 
             var year = document.getElementById('year').value;
@@ -46,62 +47,10 @@ var down = document.getElementById('result');
                 cc = 10 * cc + res[i];
                 }
 
-            /*formular to calculate the day i used 
-            day = year_code + month_code + century_code + date_number -leap_year_code)%7
-            */    
-             
-            var year_code = (yy+(yy/4))%7;
+            var day = (((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10))+dd)%7;
+            day = Math.floor(day);    
             
-            var month_code;
-            if(mm == 1){
-                month_code=0;
-            }
-            else if(mm == 2 ){
-                month_code=3;
-            }
-            else if(mm == 3 ){
-                month_code=3;
-            }
-            else if(mm == 4 ){
-                month_code=6;
-            }
-            else if(mm == 5 ){
-                month_code=1;
-            }
-            else if(mm == 6 ){
-                month_code=4;
-            }
-            else if(mm == 7 ){
-                month_code=6;
-            }
-            else if(mm == 8 ){
-                month_code=2;
-            }
-            else if(mm == 9 ){
-                month_code=5;
-            }
-            else if(mm == 10 ){
-                month_code=0;
-            }
-            else if(mm == 11){
-                month_code=3;
-            }
-            else{
-                month_code=5;
-            }
             
-            var century_code = (cc-18)%7;
-            
-            var day
-            if( year % 100 !== 0 || year % 4 == 0){
-                day = (year_code + month_code + century_code + dd -1) % 7;
-            }
-            if( year % 4 == 0 && Math.sqrt(year) == 0){
-                day = (year_code + month_code + century_code + dd -1 ) % 7;
-            }
-            else{
-                day = (year_code + month_code + century_code + dd) % 7;
-            }
 
             var akan;
             if( gender == 'Female'){
@@ -154,5 +103,35 @@ var down = document.getElementById('result');
                
             }
 
-            down.innerHTML = 'Your AKAN name is ' +  akan;
-        } 
+            if (day==1){
+                name='Monday';
+            }
+            else if(day==2){
+                name='Tursday';
+            }
+            else if(day==3){
+                name='Wednesday';
+            }
+            else if(day==4){
+                name='Thursday';
+            }
+            else if(day==5){
+                name='Friday';
+            }
+            else if(day==6){
+                name='Saturday';
+            }
+            else {
+                name='Sunday';
+            }
+
+            down.innerHTML = name;
+            downn.innerHTML =  akan;
+
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+        }

@@ -42,8 +42,7 @@
         
         <h3 class="text-center">Let's get started <span style='font-size:25px;'>&#128522;</span></h3>
         <div class="row">
-        <div class="col-lg-7" >
-        <div class="col-lg-7 col-md-8 pr-0">
+        <div class="col-lg-6 col-md-8 pr-0 mb-5 mx-auto">
             <form class="p-3 mt-5" name = "myForm">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Enter Your Birth Year</label>
@@ -64,40 +63,19 @@
                         <option>Male</option>
                       </select>
                  </div>
-                <button type="button"  class="btn btn-lg btn-block " onclick = "calculate();">Submit</button>
+                <button type="button" id="button"  class="btn btn-lg btn-block " onclick = "calculate();">Submit</button>
             </form>
         </div>
-        <h3 id="result" class="p-5"></h3>
-    </div>
-    <div class="col-lg-5 pt-lg-5">
-        <div class="row b">
-            <div class="col-lg-6">
-             <h4>Female</h4>
-             <ul>
-                 <li>Monday: <strong>Adwoa</strong></li>
-                 <li>Tuesday: <strong>Abenaa</strong></li>
-                 <li>Wednesday: <strong>Akua</strong></li>
-                 <li>Thursday: <strong>Yaa</strong></li>
-                 <li>Friday: <strong>Afua</strong></li>
-                 <li>Saturday: <strong>Ama</strong></li>
-                 <li>Sunday: <strong>Akosua</strong></li>
-             </ul>
-            </div>
-            <div class="col-lg-6">
-              <h4>Male</h4>
-              <ul>
-                <li>Monday: <strong>Kwadwo</strong></li>
-                <li>Tuesday: <strong>Kwabena</strong></li>
-                <li>Wednesday: <strong>Kwaku</strong></li>
-                <li>Thursday: <strong>Yaw</strong></li>
-                <li>Friday: <strong>Kofi</strong></li>
-                <li>Saturday: <strong>Kwame</strong></li>
-                <li>Sunday: <strong> Kwasi</strong></li>
-            </ul>
-            </div>
+
+        <div  class="col-lg-5 mt-lg-5 p-5">
+          <div class="card p-5" id="myDIV" style="display: none;" >
+          <h5 class="text-center">You'were born on <span id="result1" style="color: brown;"></span> <br> Your AKAN name is <span id="result2" style="color: brown;"></span> </h5>
+          </div>
+          <div class="akan">
+            <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
+          </div>
         </div>
-    </div>
-   </div>
+      </div>
   </div>
 </body>
 <footer>
@@ -105,6 +83,13 @@
        yourAKANname
     </div>
 </footer>
+<script>
+  $(document).ready(function() {
+    $('#button').click(function() {
+      $('.d').slideToggle("slow");
+    });
+  });
+</script>
 <script src="js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

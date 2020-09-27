@@ -20,10 +20,10 @@
  After cloning it open it in your code editor and run it in your browser
  
  ## BDD
-    * User enter a valid year
-    * User enter a valid month
-    * User enter a valid day
-    * choose your gender
+  * User enter a valid year
+  * User enter a valid month
+  * User enter a valid day
+  * choose your gender
  
  ## Link to live site on GitHub Pages
  https://tharcissie.github.io/akan/

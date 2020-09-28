@@ -8,7 +8,7 @@ var downn = document.getElementById('result2');
             var gender = document.getElementById('gender').value;  
 
 
-            if( mm > 13 || mm <= 0 ) {
+            if( mm > 12 || mm <= 0 ) {
                 alert( "Please provide a valid month!" );
                 return false;
              }
